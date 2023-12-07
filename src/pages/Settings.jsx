@@ -19,7 +19,6 @@ const Settings = () => {
   const decoded = jwtDecode(auth.accesstoken);
   const [img, setImg] = useState(null);
   const [imgPreview, setImgPreview] = useState(null);
-  const imgVal = useSelector((state) => state.image.image);
 
   useEffect(() => {
     dispatch(setProfile(false));

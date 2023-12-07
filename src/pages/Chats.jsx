@@ -9,7 +9,6 @@ import useAxiosPrivate from "../hooks/useAxiosPrivate.jsx";
 import useAuth from "../hooks/useAuth.jsx";
 import { jwtDecode } from "jwt-decode";
 import { io } from "socket.io-client";
-import { setRecieve } from "../RecieveSlice.jsx";
 
 const Chats = () => {
   const { auth } = useAuth();
@@ -28,7 +27,7 @@ const Chats = () => {
   const decoded = jwtDecode(auth.accesstoken);
 
   useEffect(() => {
-    socket.current = io("ws://localhost:4000");
+    socket.current = io("https://capp-api-9sa2.onrender.com");
     socket.current.emit("setup", decoded.id);
   }, []);
 
