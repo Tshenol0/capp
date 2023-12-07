@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setProfile } from "../Profileslice";
 import useAxiosPrivate from "../hooks/useAxiosPrivate.jsx";
 import { jwtDecode } from "jwt-decode";
