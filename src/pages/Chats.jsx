@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setNotification } from "../Notificationslice.jsx";
 import { setProfile } from "../Profileslice.jsx";
 import Chatitem from "../components/Chatitem.jsx";
@@ -66,7 +66,7 @@ const Chats = () => {
 
       const getChats = async () => {
         try {
-          const response = await axiosPrivate.get("/api/chats", {
+          const response = await axiosPrivate.get(`/api/chats/${decoded.id}`, {
             signal: controller.signal,
           });
           setChats(response.data.chats);

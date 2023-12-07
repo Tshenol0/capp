@@ -49,9 +49,7 @@ const Chatitem = ({ chat }) => {
       <div className="">
         <img
           className="w-11 h-11 object-cover rounded-[100%] max-[300px]:w-9 max-[300px]:h-9"
-          src={`https://capp-api-9sa2.onrender.com/${
-            motho ? motho?.picture : "no-user.jpg"
-          }`}
+          src={`https://capp-api-9sa2.onrender.com/${motho?.picture}`}
         />
       </div>
       <div className="flex flex-col w-[85%] gap-1">
