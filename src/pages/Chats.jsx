@@ -27,7 +27,7 @@ const Chats = () => {
   const decoded = jwtDecode(auth.accesstoken);
 
   useEffect(() => {
-    socket.current = io("https://capp-api-9sa2.onrender.com");
+    socket.current = io("wss://capp-api-9sa2.onrender.com");
     socket.current.emit("setup", decoded.id);
   }, []);
 
