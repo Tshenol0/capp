@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import { jwtDecode } from "jwt-decode";
 import { format } from "timeago.js";
-import { useDispatch, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 
 const Message = ({ user }) => {
   const { auth } = useAuth();

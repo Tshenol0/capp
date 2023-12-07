@@ -77,7 +77,9 @@ const User = ({ user }) => {
     <div className="w-full h-[350px] ">
       <div className="w-full h-[50%] relative bg-black/0">
         <img
-          src={`http://localhost:4000/${user ? user?.picture : "no-user.jpg"}`}
+          src={`https://capp-api-9sa2.onrender.com/${
+            user ? user?.picture : "no-user.jpg"
+          }`}
           className="absolute w-full h-full object-cover mix-blend-overlay"
         />
       </div>

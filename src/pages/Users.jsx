@@ -44,10 +44,16 @@ const Users = () => {
           Find friends to chat with
         </h3>
       </div>
-      <div className="w-full h-[75vh] min-[1000px]:h-[70vh] py-4 p-2 sm:px-10 grid gap-2 min-[1020px]:grid-cols-4 min-[1020px]:gap-12 min-[740px]:grid-cols-3 min-[450px]:grid-cols-2 overflow-y-auto scroll-smooth">
-        {users.map((e, i) => {
-          return <User key={i} user={e} />;
-        })}
+      <div className="relative w-full h-[75vh] min-[1000px]:h-[70vh] py-4 p-2 sm:px-10 grid gap-2 min-[1020px]:grid-cols-4 min-[1020px]:gap-12 min-[740px]:grid-cols-3 min-[450px]:grid-cols-2 overflow-y-auto scroll-smooth">
+        {users.length > 0 ? (
+          users.map((e, i) => {
+            return <User key={i} user={e} />;
+          })
+        ) : (
+          <div className="font-bold tracking-widest absolute md:text-xl left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
+            No users
+          </div>
+        )}
       </div>
     </div>
   );
