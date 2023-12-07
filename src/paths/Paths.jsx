@@ -20,7 +20,7 @@ const Paths = () => {
       <Route
         path="/register"
         element={
-          <React.Suspense fallback={<Fallback />}>
+          <React.Suspense>
             <LazyRegister />
           </React.Suspense>
         }
@@ -28,7 +28,7 @@ const Paths = () => {
 
       <Route
         element={
-          <React.Suspense fallback={<Fallback />}>
+          <React.Suspense>
             <LazyAuth />
           </React.Suspense>
         }
@@ -87,7 +87,7 @@ const Paths = () => {
       <Route
         path="*"
         element={
-          <React.Suspense fallback={<Fallback />}>
+          <React.Suspense>
             <LazyNopage />
           </React.Suspense>
         }

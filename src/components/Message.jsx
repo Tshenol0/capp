@@ -30,8 +30,8 @@ const Message = ({ user }) => {
           <img
             src={
               user?.senderId === decoded.id
-                ? `http://localhost:4000/${imgVal}`
-                : `http://localhost:4000/${friendVal}`
+                ? `https://capp-api-9sa2.onrender.com/${imgVal}`
+                : `https://capp-api-9sa2.onrender.com/${friendVal}`
             }
             className="w-8 h-8 rounded-[100%] object-cover"
           />

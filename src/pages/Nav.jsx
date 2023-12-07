@@ -176,7 +176,7 @@ const Nav = () => {
               className="self-stretch flex items-center w-9"
             >
               <img
-                src={`http://localhost:4000/${imgVal}`}
+                src={`https://capp-api-9sa2.onrender.com/${imgVal}`}
                 className="w-9 h-9 rounded-[100%] object-cover"
               />
             </div>

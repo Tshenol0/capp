@@ -116,7 +116,7 @@ const Profile = () => {
         <div className=" relative flex justify-center">
           {" "}
           <img
-            src={`http://localhost:4000/${user?.picture}`}
+            src={`https://capp-api-9sa2.onrender.com/${user?.picture}`}
             className="rounded-[100%] w-40 h-40 max-[300px]:w-28 max-[300px]:h-28 object-cover mb-2"
           />
         </div>
