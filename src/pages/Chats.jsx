@@ -189,14 +189,14 @@ const Chats = () => {
               : "flex flex-col h-[90vh] relative rounded-md max-[716px]:hidden max-[716px]:invisible max-[716px]:opacity-0 max-[716px]:translate-x-[-100%] max-[716px]:absolute max-[716px]:z-2"
           }
         >
-          <div className="w-full  h-[80vh] relative z-5 flex flex-col pt-12 pb-8 px-5 overflow-y-auto scroll-smooth">
+          <div className="w-full  h-[80vh] relative z-5 flex flex-col pt-16 pb-6 px-5 overflow-y-auto scroll-smooth">
             {" "}
             {currentChat != null && width ? (
               <button
                 onClick={() => {
                   setCurrentChat(null);
                 }}
-                className="fixed bg-green-300 left-5 top-2 rounded-[100%] p-1 z-10"
+                className="fixed bg-green-300 left-5 top-4 rounded-[100%] p-1 z-10"
               >
                 <ArrowLeftIcon className="w-5 h-5" />
               </button>
