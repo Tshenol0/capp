@@ -183,8 +183,8 @@ const Nav = () => {
             <div
               className={
                 pstate
-                  ? "px-10 justify-start pt-6 flex flex-col items-start z-8 opacity-100 visible absolute top-[72px] right-[10px] bg-[#25d366] w-[200px] h-[200px] rounded-md before:content-[''] before:w-[20px] before:absolute before:top-[-6px] before:bg-[#25d366] before:right-[10px] before:h-[20px] before:rotate-45 cursor-auto translate-x-0 transition-all duration-200 ease-out"
-                  : "px-10 justify-start pt-6 flex flex-col items-start opacity-0 invisible absolute  bg-[#128c7e] w-[200px] h-[200px] rounded-md before:content-[''] before:w-[20px] before:absolute before:top-[-6px] before:bg-[#25d366] before:right-[10px] before:h-[20px] before:rotate-45 cursor-auto translate-x-12"
+                  ? "px-10 justify-start pt-6 flex flex-col items-start z-8 opacity-100 visible absolute top-[72px] right-[10px] bg-[#128c7e] w-[200px] h-[200px] rounded-md before:content-[''] before:w-[20px] before:absolute before:top-[-6px] before:bg-[#25d366] before:right-[10px] before:h-[20px] before:rotate-45 cursor-auto translate-x-0 transition-all duration-200 ease-out"
+                  : "px-10 justify-start pt-6 flex flex-col items-start opacity-0 invisible absolute w-[200px] h-[200px] rounded-md before:content-[''] before:w-[20px] before:absolute before:top-[-6px] before:bg-[#25d366] before:right-[10px] before:h-[20px] before:rotate-45 cursor-auto translate-x-12"
               }
             >
               <div className="py-2 ">
