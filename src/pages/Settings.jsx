@@ -165,7 +165,7 @@ const Settings = () => {
               className="w-20 h-20 rounded-[100%] object-cover"
             />
             <label htmlFor="image-upload">
-              <PlusIcon className="w-4 h-4 bg-slate-400 rounded-[100%] absolute left-14 bottom-0 cursor-pointer" />
+              <PlusIcon className="w-5 h-5 bg-slate-400 rounded-[100%] absolute left-14 bottom-0 cursor-pointer" />
             </label>
             <input
               type="file"
