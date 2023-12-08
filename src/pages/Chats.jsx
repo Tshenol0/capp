@@ -60,22 +60,20 @@ const Chats = () => {
 
   useEffect(() => {
     const controller = new AbortController();
-    if (isMounted.current === true) {
-      dispatch(setNotification(false));
-      dispatch(setProfile(false));
+    dispatch(setNotification(false));
+    dispatch(setProfile(false));
 
-      const getChats = async () => {
-        try {
-          const response = await axiosPrivate.get(`/api/chats/${decoded.id}`, {
-            signal: controller.signal,
-          });
-          setChats(response.data.chats);
-        } catch (error) {
-          console.error(error);
-        }
-      };
-      getChats();
-    }
+    const getChats = async () => {
+      try {
+        const response = await axiosPrivate.get(`/api/chats/${decoded.id}`, {
+          signal: controller.signal,
+        });
+        setChats(response.data.chats);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    getChats();
 
     return () => {
       isMounted.current = true;
