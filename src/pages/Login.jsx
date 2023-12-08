@@ -1,4 +1,4 @@
-import { Link, json, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "../api/axios";
 import useAuth from "../hooks/useAuth";
@@ -54,7 +54,7 @@ const Login = () => {
           <input
             className="border border-gray-300 p-2 rounded-md"
             type="text"
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value.trim())}
             value={email}
           />
         </div>
@@ -63,7 +63,7 @@ const Login = () => {
           <input
             className="border border-gray-300 p-2 rounded-md"
             type="password"
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value.trim())}
             value={password}
           />
         </div>

@@ -38,7 +38,7 @@ const Users = () => {
   }, [search]);
 
   return (
-    <div className="h-[100vh] pt-[74px]">
+    <div className="h-[100vh] pt-[86px]">
       <div className=" max-w-[500px] w-full mx-auto pt-12 mb-6">
         <h3 className="text-xl min-[280px]-text-2xl min-[470px]:text-4xl font-medium tracking-wider text-center">
           Find friends to chat with

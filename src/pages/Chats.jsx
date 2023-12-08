@@ -149,7 +149,7 @@ const Chats = () => {
   };
 
   return (
-    <div className="grid h-[100vh] bg-[#92e9b3] pt-[74px] gap-1 sm:gap-2 max-[716px]:grid-cols-1 max-[1054px]:grid-cols-[340px,1fr] max-[300px]:grid-cols-1 min-[1055px]:grid-cols-[380px_minmax(100px,1fr)] ">
+    <div className="grid h-[100vh] bg-[#92e9b3] pt-[86px] gap-1 sm:gap-2 max-[716px]:grid-cols-1 max-[1054px]:grid-cols-[340px,1fr] max-[300px]:grid-cols-1 min-[1055px]:grid-cols-[380px_minmax(100px,1fr)] ">
       <div
         className={
           currentChat

@@ -59,7 +59,7 @@ const Register = () => {
             type="text"
             autoComplete="off"
             onChange={(e) => {
-              setFname(e.target.value);
+              setFname(e.target.value.trim());
             }}
             value={fname}
           />
@@ -71,7 +71,7 @@ const Register = () => {
             type="text"
             autoComplete="off"
             onChange={(e) => {
-              setLname(e.target.value);
+              setLname(e.target.value.trim());
             }}
             value={lname}
           />
@@ -83,7 +83,7 @@ const Register = () => {
             type="text"
             autoComplete="off"
             onChange={(e) => {
-              setEmail(e.target.value);
+              setEmail(e.target.value.trim());
             }}
             value={email}
           />
@@ -94,7 +94,7 @@ const Register = () => {
             className="border border-gray-300 p-2 rounded-md"
             type="password"
             onChange={(e) => {
-              setPassword(e.target.value);
+              setPassword(e.target.value.trim());
             }}
             value={password}
           />
