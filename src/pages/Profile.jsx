@@ -106,7 +106,7 @@ const Profile = () => {
   };
 
   return (
-    <div className="bg-[#66e094]/100 w-full h-screen pt-[62px]  relative">
+    <div className="bg-[#66e094]/100 w-full h-screen pt-[74px]  relative">
       <img
         src={background}
         className="absolute w-full h-full object-cover mix-blend-overlay"
