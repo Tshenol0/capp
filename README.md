@@ -1,4 +1,4 @@
-CAPP-API
+CAPP
 
 Description :
 
