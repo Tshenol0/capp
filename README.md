@@ -1,4 +1,4 @@
-CAPP
+CAPP(Chat App)
 
 Description :
 
