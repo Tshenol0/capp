@@ -2,9 +2,15 @@ CAPP(Chat App)
 
 Description :
 
-This is a front end for the chat web application. The first page they get is the login page and with a link to the registration page. Email and passwords are required to login.
+This is a chat web application. The first page shown is the login screen, which also includes a link to the registration page. Users must either log in with their email and password or register if they have not yet created an account.
 
-Users need to login first or register if not yet registered.There are multiple checks during this process such as ensuring all fields are provided,correct and valid,if not then an error message will pop up, users can then edit their own profile by changing their firstname,lastname,status, or by uploading a new profile picture. The user can search for other registered users ,once they get the other users they have the option to view that user's profile and/or follow them. A user has to follow back a follower to be able to chat with them, once the users have followed each other the chanel for chatting is then established. Realtime messaging takes place only between mutual followers. Users can log out of the app at any time they like.
+During login and registration, multiple validations ensure that all required fields are completed and that the information provided is correct and valid. If any errors occur, an appropriate message is displayed.
+
+After logging in, users can edit their profiles by updating their first name, last name, status, or profile picture. They can also search for other registered users. From the search results, a user can view another user’s profile and choose to follow them.
+
+To start a chat, both users must follow each other. Once they have followed each other, a chat channel is established and real-time messaging becomes available.
+
+Users can log out of the application at any time.
 
 ![chat](https://github.com/user-attachments/assets/ea825e29-2994-4416-b409-7c39c865845c)
 
